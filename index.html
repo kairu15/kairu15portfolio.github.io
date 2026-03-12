@@ -3,325 +3,333 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio - Netflix Style</title>
+    <meta name="description" content="Kylle Ian D. Acibron - Full Stack Developer & Software Engineer Portfolio">
+    <meta name="keywords" content="portfolio, web developer, software engineer, full stack, programmer">
+    <meta name="author" content="Kylle Ian D. Acibron">
+    <meta property="og:title" content="Kylle Ian D. Acibron - Portfolio">
+    <meta property="og:description" content="Passionate developer creating exceptional digital experiences">
+    <meta property="og:type" content="website">
+    <title>Kylle Ian D. Acibron - Full Stack Developer Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
+    <header class="navbar" role="banner">
+        <nav class="nav-container" role="navigation" aria-label="Main navigation">
             <div class="nav-logo">
                 <h2>Kylle<span class="accent">Portfolio</span></h2>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-                <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button></li>
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="#home" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="#about" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#projects" class="nav-link" role="menuitem">Projects</a></li>
+                <li role="none"><a href="#skills" class="nav-link" role="menuitem">Skills</a></li>
+                <li role="none"><a href="#contact" class="nav-link" role="menuitem">Contact</a></li>
+                <li role="none"><button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark/light theme"><i class="fas fa-moon" aria-hidden="true"></i></button></li>
             </ul>
-            <div class="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-    </nav>
+            <button class="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </button>
+        </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content">
-            <div class="hero-text">
-                <h1 class="hero-title">Hi, I'm <span class="accent">Kylle Ian D. Acibron</span></h1>
-                <p class="hero-subtitle"><span id="typing-text"></span><span class="cursor">|</span></p>
-                <p class="hero-description">
-                    Passionate about creating exceptional digital experiences through clean code and innovative design.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="profile-card">
-                    <div class="profile-image">
-                        <img src="https://via.placeholder.com/300x300/000000/FFFFFF?text=PROFILE" alt="Profile">
-                    </div>
-                    <div class="profile-info">
-                        <h3>Available for Work</h3>
-                        <p>Open to opportunities</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="scroll-arrow"></div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate developer with expertise in modern web technologies. 
-                        I love turning complex problems into simple, beautiful, and intuitive solutions.
+    <main>
+        <section id="home" class="hero" role="banner">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">Hi, I'm <span class="accent">Kylle Ian D. Acibron</span></h1>
+                    <p class="hero-subtitle"><span id="typing-text" aria-live="polite"></span><span class="cursor" aria-hidden="true">|</span></p>
+                    <p class="hero-description">
+                        Passionate about creating exceptional digital experiences through clean code and innovative design.
                     </p>
-                    <p>
-                        With a strong foundation in both frontend and backend development, 
-                        I bring ideas to life through code and creativity.
-                    </p>
-                    <div class="about-stats">
-                        <div class="stat-item">
-                            <h3>5+</h3>
-                            <p>Years Experience</p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View Projects</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="https://via.placeholder.com/300x300/000000/FFFFFF?text=PROFILE" alt="Kylle Ian D. Acibron - Professional Profile Photo">
                         </div>
-                        <div class="stat-item">
-                            <h3>50+</h3>
-                            <p>Projects Completed</p>
-                        </div>
-                        <div class="stat-item">
-                            <h3>100%</h3>
-                            <p>Client Satisfaction</p>
+                        <div class="profile-info">
+                            <h3>Available for Work</h3>
+                            <p>Open to opportunities</p>
                         </div>
                     </div>
                 </div>
-                <div class="about-image">
-                    <img src="https://via.placeholder.com/500x400/141414/FFFFFF?text=WORKSPACE" alt="Workspace">
+            </div>
+            <div class="scroll-indicator" aria-hidden="true">
+                <div class="scroll-arrow"></div>
+            </div>
+        </section>
+
+        <section id="about" class="section" aria-labelledby="about-title">
+            <div class="container">
+                <h2 id="about-title" class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            I'm a passionate developer with expertise in modern web technologies. 
+                            I love turning complex problems into simple, beautiful, and intuitive solutions.
+                        </p>
+                        <p>
+                            With a strong foundation in both frontend and backend development, 
+                            I bring ideas to life through code and creativity.
+                        </p>
+                        <div class="about-stats" role="list">
+                            <div class="stat-item" role="listitem">
+                                <h3>5+</h3>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item" role="listitem">
+                                <h3>50+</h3>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item" role="listitem">
+                                <h3>100%</h3>
+                                <p>Client Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <img src="https://via.placeholder.com/500x400/141414/FFFFFF?text=WORKSPACE" alt="Development workspace setup">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section section-dark">
+        <section id="projects" class="section section-dark" aria-labelledby="projects-title">
+            <div class="container">
+                <h2 id="projects-title" class="section-title">Featured Projects</h2>
+                <div class="projects-controls">
+                    <div class="search-bar">
+                        <label for="project-search" class="sr-only">Search projects</label>
+                        <input type="text" id="project-search" placeholder="Search projects..." aria-label="Search projects">
+                        <i class="fas fa-search" aria-hidden="true"></i>
+                    </div>
+                    <div class="filter-buttons" role="group" aria-label="Filter projects">
+                        <button class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                        <button class="filter-btn" data-filter="web" aria-pressed="false">Web</button>
+                        <button class="filter-btn" data-filter="mobile" aria-pressed="false">Mobile</button>
+                        <button class="filter-btn" data-filter="desktop" aria-pressed="false">Desktop</button>
+                    </div>
+                </div>
+                <div class="projects-grid" role="list">
+                    <article class="project-card" data-category="web" role="listitem">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=LMS+CEBU+MINI+HOTEL" alt="LMS Cebu Mini Hotel Project Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View LMS Cebu Mini Hotel project"><i class="fas fa-eye" aria-hidden="true"></i></a>
+                                    <a href="#" class="project-link" aria-label="View LMS Cebu Mini Hotel on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>LMS Cebu Mini Hotel</h3>
+                            <p>Complete Learning Management System for Cebu Mini Hotel with booking and training modules</p>
+                            <div class="project-tech" role="list" aria-label="Technologies used">
+                                <span class="tech-tag" role="listitem">HTML/CSS</span>
+                                <span class="tech-tag" role="listitem">JavaScript</span>
+                                <span class="tech-tag" role="listitem">Database</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="web" role="listitem">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=PROJECT+2" alt="Task Management App Project Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Task Management App project"><i class="fas fa-eye" aria-hidden="true"></i></a>
+                                    <a href="#" class="project-link" aria-label="View Task Management App on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Task Management App</h3>
+                            <p>Collaborative project management tool with real-time updates</p>
+                            <div class="project-tech" role="list" aria-label="Technologies used">
+                                <span class="tech-tag" role="listitem">Vue.js</span>
+                                <span class="tech-tag" role="listitem">Firebase</span>
+                                <span class="tech-tag" role="listitem">Tailwind</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-category="desktop" role="listitem">
+                        <div class="project-image">
+                            <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=PROJECT+3" alt="Social Media Dashboard Project Screenshot">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="View Social Media Dashboard project"><i class="fas fa-eye" aria-hidden="true"></i></a>
+                                    <a href="#" class="project-link" aria-label="View Social Media Dashboard on GitHub"><i class="fab fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Social Media Dashboard</h3>
+                            <p>Analytics dashboard for social media management</p>
+                            <div class="project-tech" role="list" aria-label="Technologies used">
+                                <span class="tech-tag" role="listitem">Angular</span>
+                                <span class="tech-tag" role="listitem">Python</span>
+                                <span class="tech-tag" role="listitem">PostgreSQL</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section" aria-labelledby="skills-title">
+            <div class="container">
+                <h2 id="skills-title" class="section-title">Technical Skills</h2>
+                <div class="skills-categories">
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list" role="list" aria-label="Frontend skills">
+                            <div class="skill-item" role="listitem">
+                                <span>HTML/CSS</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <span>JavaScript</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <span>React/Vue</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Backend</h3>
+                        <div class="skill-list" role="list" aria-label="Backend skills">
+                            <div class="skill-item" role="listitem">
+                                <span>Node.js</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <span>Python</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <span>Database</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <div class="skill-list" role="list" aria-label="Development tools">
+                            <div class="skill-item" role="listitem">
+                                <span>Git/GitHub</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="92" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <span>CI/CD</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item" role="listitem">
+                                <span>Cloud Services</span>
+                                <div class="skill-bar" role="progressbar" aria-valuenow="78" aria-valuemin="0" aria-valuemax="100">
+                                    <div class="skill-progress" style="width: 78%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section section-dark" aria-labelledby="contact-title">
+            <div class="container">
+                <h2 id="contact-title" class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Connect</h3>
+                        <p>I'm always interested in hearing about new projects and opportunities.</p>
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope" aria-hidden="true"></i>
+                                <span>kylle.acibron@example.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone" aria-hidden="true"></i>
+                                <span>+63 (9XX) XXX-XXXX</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+                                <span>Cebu City, Philippines</span>
+                            </div>
+                        </div>
+                        <div class="social-links" role="list" aria-label="Social media links">
+                            <a href="#" class="social-link" aria-label="GitHub profile" role="listitem"><i class="fab fa-github" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" aria-label="LinkedIn profile" role="listitem"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" aria-label="Twitter profile" role="listitem"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                            <a href="#" class="social-link" aria-label="Instagram profile" role="listitem"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm" novalidate>
+                            <div class="form-group">
+                                <label for="name" class="sr-only">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" required aria-describedby="name-error">
+                                <div class="error-message" id="name-error" role="alert"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="sr-only">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" required aria-describedby="email-error">
+                                <div class="error-message" id="email-error" role="alert"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject" class="sr-only">Subject</label>
+                                <input type="text" id="subject" name="subject" placeholder="Subject" required aria-describedby="subject-error">
+                                <div class="error-message" id="subject-error" role="alert"></div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="sr-only">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Your Message" required aria-describedby="message-error"></textarea>
+                                <div class="error-message" id="message-error" role="alert"></div>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-controls">
-                <div class="search-bar">
-                    <input type="text" id="project-search" placeholder="Search projects...">
-                    <i class="fas fa-search"></i>
-                </div>
-                <div class="filter-buttons">
-                    <button class="filter-btn active" data-filter="all">All</button>
-                    <button class="filter-btn" data-filter="web">Web</button>
-                    <button class="filter-btn" data-filter="mobile">Mobile</button>
-                    <button class="filter-btn" data-filter="desktop">Desktop</button>
-                </div>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=LMS+CEBU+MINI+HOTEL" alt="LMS Cebu Mini Hotel">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>LMS Cebu Mini Hotel</h3>
-                        <p>Complete Learning Management System for Cebu Mini Hotel with booking and training modules</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML/CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Database</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="web">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=PROJECT+2" alt="Project 2">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Task Management App</h3>
-                        <p>Collaborative project management tool with real-time updates</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Vue.js</span>
-                            <span class="tech-tag">Firebase</span>
-                            <span class="tech-tag">Tailwind</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card" data-category="desktop">
-                    <div class="project-image">
-                        <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=PROJECT+3" alt="Project 3">
-                        <div class="project-overlay">
-                            <div class="project-links">
-                                <a href="#" class="project-link"><i class="fas fa-eye"></i></a>
-                                <a href="#" class="project-link"><i class="fab fa-github"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Social Media Dashboard</h3>
-                        <p>Analytics dashboard for social media management</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">PostgreSQL</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Skills Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2 class="section-title">Technical Skills</h2>
-            <div class="skills-categories">
-                <div class="skill-category">
-                    <h3>Frontend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>HTML/CSS</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 95%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>JavaScript</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 90%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>React/Vue</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 85%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Backend</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>Node.js</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 88%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Python</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 82%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Database</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 80%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="skill-category">
-                    <h3>Tools</h3>
-                    <div class="skill-list">
-                        <div class="skill-item">
-                            <span>Git/GitHub</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 92%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>CI/CD</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 75%"></div>
-                            </div>
-                        </div>
-                        <div class="skill-item">
-                            <span>Cloud Services</span>
-                            <div class="skill-bar">
-                                <div class="skill-progress" style="width: 78%"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="section section-dark">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h3>Let's Connect</h3>
-                    <p>I'm always interested in hearing about new projects and opportunities.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <span>your.email@example.com</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <span>+1 (555) 123-4567</span>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Your City, Country</span>
-                        </div>
-                    </div>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form id="contactForm">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" placeholder="Your Name" required>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" placeholder="Your Email" required>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" placeholder="Subject" required>
-                            <div class="error-message"></div>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
-                            <div class="error-message"></div>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p>&copy; 2024 Kylle Ian D. Acibron. All rights reserved. Made with <i class="fas fa-heart"></i></p>
+            <p>&copy; 2024 Kylle Ian D. Acibron. All rights reserved. Made with <i class="fas fa-heart" aria-hidden="true"></i></p>
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
