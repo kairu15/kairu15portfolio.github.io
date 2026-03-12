@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio - Netflix Style</title>
-    <link rel="stylesheet" href="portfolio.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
@@ -21,6 +21,7 @@
                 <li><a href="#projects" class="nav-link">Projects</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"><i class="fas fa-moon"></i></button></li>
             </ul>
             <div class="hamburger">
                 <span></span>
@@ -35,7 +36,7 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">Hi, I'm <span class="accent">Kylle Ian D. Acibron</span></h1>
-                <p class="hero-subtitle">Programmer & Software Developer</p>
+                <p class="hero-subtitle"><span id="typing-text"></span><span class="cursor">|</span></p>
                 <p class="hero-description">
                     Passionate about creating exceptional digital experiences through clean code and innovative design.
                 </p>
@@ -101,8 +102,20 @@
     <section id="projects" class="section section-dark">
         <div class="container">
             <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-controls">
+                <div class="search-bar">
+                    <input type="text" id="project-search" placeholder="Search projects...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="mobile">Mobile</button>
+                    <button class="filter-btn" data-filter="desktop">Desktop</button>
+                </div>
+            </div>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=LMS+CEBU+MINI+HOTEL" alt="LMS Cebu Mini Hotel">
                         <div class="project-overlay">
@@ -123,7 +136,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="web">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=PROJECT+2" alt="Project 2">
                         <div class="project-overlay">
@@ -144,7 +157,7 @@
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" data-category="desktop">
                     <div class="project-image">
                         <img src="https://via.placeholder.com/400x250/141414/FFFFFF?text=PROJECT+3" alt="Project 3">
                         <div class="project-overlay">
@@ -281,15 +294,19 @@
                     <form id="contactForm">
                         <div class="form-group">
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
+                            <div class="error-message"></div>
                         </div>
                         <div class="form-group">
                             <input type="email" id="email" name="email" placeholder="Your Email" required>
+                            <div class="error-message"></div>
                         </div>
                         <div class="form-group">
                             <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                            <div class="error-message"></div>
                         </div>
                         <div class="form-group">
                             <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                            <div class="error-message"></div>
                         </div>
                         <button type="submit" class="btn btn-primary">Send Message</button>
                     </form>
@@ -305,6 +322,6 @@
         </div>
     </footer>
 
-    <script src="portfolio.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
